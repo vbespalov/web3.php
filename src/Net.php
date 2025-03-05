@@ -9,7 +9,7 @@
  * @license MIT
  */
 
-namespace Web3;
+namespace Cnx;
 
 use Cnx\Providers\HttpProvider;
 use Cnx\Providers\Provider;
@@ -93,7 +93,7 @@ class Net
             }
             if (!array_key_exists($method, $this->methods)) {
                 // new the method
-                $methodClass = sprintf("\Web3\Methods\%s\%s", ucfirst($class[1]), ucfirst($name));
+                $methodClass = sprintf("\Cnx\Methods\%s\%s", ucfirst($class[1]), ucfirst($name));
                 $methodObject = new $methodClass($method, $arguments);
                 $this->methods[$method] = $methodObject;
             } else {

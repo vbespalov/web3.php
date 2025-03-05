@@ -10,7 +10,7 @@ class PersonalBatchTest extends TestCase
     /**
      * personal
      * 
-     * @var Web3\Personal
+     * @var Cnx\Personal
      */
     protected $personal;
 

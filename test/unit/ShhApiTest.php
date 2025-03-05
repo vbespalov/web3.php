@@ -12,7 +12,7 @@ class ShhApiTest extends TestCase
     /**
      * shh
      * 
-     * @var Web3\Shh
+     * @var Cnx\Shh
      */
     protected $shh;
 

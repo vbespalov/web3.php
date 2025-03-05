@@ -9,7 +9,7 @@
  * @license MIT
  */
 
-namespace Web3;
+namespace Cnx;
 
 use Cnx\Contracts\Ethabi;
 use Cnx\Contracts\Types\Address;

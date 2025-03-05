@@ -12,7 +12,7 @@ class NetApiTest extends TestCase
     /**
      * net
      * 
-     * @var Web3\Net
+     * @var Cnx\Net
      */
     protected $net;
 

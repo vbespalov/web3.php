@@ -12,7 +12,7 @@ class NetTest extends TestCase
     /**
      * net
      * 
-     * @var Web3\Net
+     * @var Cnx\Net
      */
     protected $net;
 
