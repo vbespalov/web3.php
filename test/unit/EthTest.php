@@ -2,17 +2,17 @@
 
 namespace Test\Unit;
 
+use Cnx\Eth;
+use Cnx\Providers\HttpProvider;
 use RuntimeException;
 use Test\TestCase;
-use Web3\Providers\HttpProvider;
-use Web3\Eth;
 
 class EthTest extends TestCase
 {
     /**
      * eth
      * 
-     * @var \Web3\Eth
+     * @var \Cnx\Eth
      */
     protected $eth;
 

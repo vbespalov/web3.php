@@ -2,9 +2,9 @@
 
 namespace Test\Unit;
 
+use Cnx\Methods\JSONRPC;
 use InvalidArgumentException;
 use Test\TestCase;
-use Web3\Methods\JSONRPC;
 
 class JSONRPCTest extends TestCase
 {

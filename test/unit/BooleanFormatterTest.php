@@ -2,16 +2,15 @@
 
 namespace Test\Unit;
 
-use InvalidArgumentException;
+use Cnx\Formatters\BooleanFormatter;
 use Test\TestCase;
-use Web3\Formatters\BooleanFormatter;
 
 class BooleanFormatterTest extends TestCase
 {
     /**
      * formatter
      * 
-     * @var \Web3\Formatters\BooleanFormatter
+     * @var \Cnx\Formatters\BooleanFormatter
      */
     protected $formatter;
 

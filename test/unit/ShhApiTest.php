@@ -2,10 +2,10 @@
 
 namespace Test\Unit;
 
-use RuntimeException;
+use Cnx\Shh;
 use InvalidArgumentException;
+use RuntimeException;
 use Test\TestCase;
-use Web3\Shh;
 
 class ShhApiTest extends TestCase
 {

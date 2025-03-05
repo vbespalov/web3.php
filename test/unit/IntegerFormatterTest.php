@@ -2,15 +2,15 @@
 
 namespace Test\Unit;
 
+use Cnx\Formatters\IntegerFormatter;
 use Test\TestCase;
-use Web3\Formatters\IntegerFormatter;
 
 class IntegerFormatterTest extends TestCase
 {
     /**
      * formatter
      * 
-     * @var \Web3\Formatters\IntegerFormatter
+     * @var \Cnx\Formatters\IntegerFormatter
      */
     protected $formatter;
 

@@ -9,11 +9,10 @@
  * @license MIT
  */
 
-namespace Web3\Methods\Net;
+namespace Cnx\Methods\Net;
 
-use InvalidArgumentException;
-use Web3\Methods\EthMethod;
-use Web3\Formatters\BigNumberFormatter;
+use Cnx\Formatters\BigNumberFormatter;
+use Cnx\Methods\EthMethod;
 
 class PeerCount extends EthMethod
 {

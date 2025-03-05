@@ -2,15 +2,15 @@
 
 namespace Test\Unit;
 
+use Cnx\Validators\BooleanValidator;
 use Test\TestCase;
-use Web3\Validators\BooleanValidator;
 
 class BooleanValidatorTest extends TestCase
 {
     /**
      * validator
      * 
-     * @var \Web3\Validators\BooleanValidator
+     * @var \Cnx\Validators\BooleanValidator
      */
     protected $validator;
 

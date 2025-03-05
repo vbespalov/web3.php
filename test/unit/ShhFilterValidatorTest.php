@@ -2,15 +2,15 @@
 
 namespace Test\Unit;
 
+use Cnx\Validators\ShhFilterValidator;
 use Test\TestCase;
-use Web3\Validators\ShhFilterValidator;
 
 class ShhFilterValidatorTest extends TestCase
 {
     /**
      * validator
      * 
-     * @var \Web3\Validators\ShhFilterValidator
+     * @var \Cnx\Validators\ShhFilterValidator
      */
     protected $validator;
 

@@ -2,12 +2,12 @@
 
 namespace Test\Unit;
 
+use Cnx\Contract;
+use Cnx\Utils;
 use InvalidArgumentException;
+use phpseclib\Math\BigInteger as BigNumber;
 use stdClass;
 use Test\TestCase;
-use phpseclib\Math\BigInteger as BigNumber;
-use Web3\Utils;
-use Web3\Contract;
 
 class UtilsTest extends TestCase
 {
@@ -424,27 +424,27 @@ class UtilsTest extends TestCase
      */
     public function testToEther()
     {
-        list($bnq, $bnr) = Utils::toEther('0x1', 'wei');
+        [$bnq, $bnr] = Utils::toEther('0x1', 'wei');
 
         $this->assertEquals($bnq->toString(), '0');
         $this->assertEquals($bnr->toString(), '1');
 
-        list($bnq, $bnr) = Utils::toEther('18', 'wei');
+        [$bnq, $bnr] = Utils::toEther('18', 'wei');
 
         $this->assertEquals($bnq->toString(), '0');
         $this->assertEquals($bnr->toString(), '18');
 
-        list($bnq, $bnr) = Utils::toEther('1', 'kether');
+        [$bnq, $bnr] = Utils::toEther('1', 'kether');
 
         $this->assertEquals($bnq->toString(), '1000');
         $this->assertEquals($bnr->toString(), '0');
 
-        list($bnq, $bnr) = Utils::toEther('0x5218', 'wei');
+        [$bnq, $bnr] = Utils::toEther('0x5218', 'wei');
 
         $this->assertEquals($bnq->toString(), '0');
         $this->assertEquals($bnr->toString(), '21016');
 
-        list($bnq, $bnr) = Utils::toEther('0x5218', 'ether');
+        [$bnq, $bnr] = Utils::toEther('0x5218', 'ether');
 
         $this->assertEquals($bnq->toString(), '21016');
         $this->assertEquals($bnr->toString(), '0');
@@ -457,39 +457,39 @@ class UtilsTest extends TestCase
      */
     public function testFromWei()
     {
-        list($bnq, $bnr) = Utils::fromWei('1000000000000000000', 'ether');
+        [$bnq, $bnr] = Utils::fromWei('1000000000000000000', 'ether');
 
         $this->assertEquals($bnq->toString(), '1');
         $this->assertEquals($bnr->toString(), '0');
 
-        list($bnq, $bnr) = Utils::fromWei('18', 'wei');
+        [$bnq, $bnr] = Utils::fromWei('18', 'wei');
 
         $this->assertEquals($bnq->toString(), '18');
         $this->assertEquals($bnr->toString(), '0');
 
-        list($bnq, $bnr) = Utils::fromWei(1, 'femtoether');
+        [$bnq, $bnr] = Utils::fromWei(1, 'femtoether');
 
         $this->assertEquals($bnq->toString(), '0');
         $this->assertEquals($bnr->toString(), '1');
 
-        list($bnq, $bnr) = Utils::fromWei(0x11, 'nano');
+        [$bnq, $bnr] = Utils::fromWei(0x11, 'nano');
 
         $this->assertEquals($bnq->toString(), '0');
         $this->assertEquals($bnr->toString(), '17');
 
-        list($bnq, $bnr) = Utils::fromWei('0x5218', 'kwei');
+        [$bnq, $bnr] = Utils::fromWei('0x5218', 'kwei');
 
         $this->assertEquals($bnq->toString(), '21');
         $this->assertEquals($bnr->toString(), '16');
 
         try {
-            list($bnq, $bnr) = Utils::fromWei('0x5218', new stdClass);
+            [$bnq, $bnr] = Utils::fromWei('0x5218', new stdClass);
         } catch (InvalidArgumentException $e) {
             $this->assertTrue($e !== null);
         }
 
         try {
-            list($bnq, $bnr) = Utils::fromWei('0x5218', 'test');
+            [$bnq, $bnr] = Utils::fromWei('0x5218', 'test');
         } catch (InvalidArgumentException $e) {
             $this->assertTrue($e !== null);
         }

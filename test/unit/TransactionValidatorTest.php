@@ -2,15 +2,15 @@
 
 namespace Test\Unit;
 
+use Cnx\Validators\TransactionValidator;
 use Test\TestCase;
-use Web3\Validators\TransactionValidator;
 
 class TransactionValidatorTest extends TestCase
 {
     /**
      * validator
      * 
-     * @var \Web3\Validators\TransactionValidator
+     * @var \Cnx\Validators\TransactionValidator
      */
     protected $validator;
 

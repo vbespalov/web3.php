@@ -9,22 +9,21 @@
  * @license MIT
  */
 
-namespace Web3\Contracts;
+namespace Cnx\Contracts;
 
+use Cnx\Contracts\Types\Address;
+use Cnx\Contracts\Types\Boolean;
+use Cnx\Contracts\Types\Bytes;
+use Cnx\Contracts\Types\DynamicArray;
+use Cnx\Contracts\Types\DynamicBytes;
+use Cnx\Contracts\Types\Integer;
+use Cnx\Contracts\Types\SizedArray;
+use Cnx\Contracts\Types\Str;
+use Cnx\Contracts\Types\Tuple;
+use Cnx\Contracts\Types\Uinteger;
+use Cnx\Utils;
 use InvalidArgumentException;
 use stdClass;
-use Web3\Utils;
-use Web3\Formatters\IntegerFormatter;
-use Web3\Contracts\Types\Address;
-use Web3\Contracts\Types\Boolean;
-use Web3\Contracts\Types\Bytes;
-use Web3\Contracts\Types\DynamicBytes;
-use Web3\Contracts\Types\Integer;
-use Web3\Contracts\Types\Str;
-use Web3\Contracts\Types\Uinteger;
-use Web3\Contracts\Types\SizedArray;
-use Web3\Contracts\Types\DynamicArray;
-use Web3\Contracts\Types\Tuple;
 
 class Ethabi
 {

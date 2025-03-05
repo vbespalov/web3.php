@@ -2,15 +2,15 @@
 
 namespace Test\Unit;
 
+use Cnx\Formatters\AddressFormatter;
 use Test\TestCase;
-use Web3\Formatters\AddressFormatter;
 
 class AddressFormatterTest extends TestCase
 {
     /**
      * formatter
      * 
-     * @var \Web3\Formatters\AddressFormatter
+     * @var \Cnx\Formatters\AddressFormatter
      */
     protected $formatter;
 

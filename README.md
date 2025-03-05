@@ -31,16 +31,17 @@ Or you can add this line in composer.json
 # Usage
 
 ### New instance
+
 ```php
-use Web3\Web3;
+use Cnx\Web3;
 
 $web3 = new Web3('http://localhost:8545');
 ```
 
 ### Using provider
+
 ```php
-use Web3\Web3;
-use Web3\Providers\HttpProvider;
+use Cnx\Providers\HttpProvider;use Cnx\Web3;
 
 $web3 = new Web3(new HttpProvider('http://localhost:8545'));
 
@@ -62,9 +63,9 @@ $web3->clientVersion(function ($err, $version) {
 ```
 
 ### Async
+
 ```php
-use Web3\Web3;
-use Web3\Providers\HttpAsyncProvider;
+use Cnx\Providers\HttpAsyncProvider;use Cnx\Web3;
 
 $web3 = new Web3(new HttpAsyncProvider('http://localhost:8545'));
 
@@ -79,9 +80,9 @@ Async\await($promise);
 ```
 
 ### Websocket
+
 ```php
-use Web3\Web3;
-use Web3\Providers\WsProvider;
+use Cnx\Providers\WsProvider;use Cnx\Web3;
 
 $web3 = new Web3(new WsProvider('ws://localhost:8545'));
 
@@ -99,8 +100,9 @@ $web3->provider->close();
 ```
 
 ### Eth
+
 ```php
-use Web3\Web3;
+use Cnx\Web3;
 
 $web3 = new Web3('http://localhost:8545');
 $eth = $web3->eth;
@@ -109,14 +111,15 @@ $eth = $web3->eth;
 Or
 
 ```php
-use Web3\Eth;
+use Cnx\Eth;
 
 $eth = new Eth('http://localhost:8545');
 ```
 
 ### Net
+
 ```php
-use Web3\Web3;
+use Cnx\Web3;
 
 $web3 = new Web3('http://localhost:8545');
 $net = $web3->net;
@@ -125,7 +128,7 @@ $net = $web3->net;
 Or
 
 ```php
-use Web3\Net;
+use Cnx\Net;
 
 $net = new Net('http://localhost:8545');
 ```
@@ -198,7 +201,7 @@ $personal->provider->execute(function ($err, $data) {
 ### Contract
 
 ```php
-use Web3\Contract;
+use Cnx\Contract;
 
 $contract = new Contract('http://localhost:8545', $abi);
 

@@ -2,9 +2,8 @@
 
 namespace Test\Unit;
 
-use InvalidArgumentException;
+use Cnx\Contracts\Types\Boolean;
 use Test\TestCase;
-use Web3\Contracts\Types\Boolean;
 
 class BooleanTypeTest extends TestCase
 {
@@ -38,7 +37,7 @@ class BooleanTypeTest extends TestCase
     /**
      * solidityType
      * 
-     * @var \Web3\Contracts\SolidityType
+     * @var \Cnx\Contracts\SolidityType
      */
     protected $solidityType;
 

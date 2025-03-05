@@ -9,12 +9,10 @@
  * @license MIT
  */
 
-namespace Web3\Methods;
+namespace Cnx\Methods;
 
 use InvalidArgumentException;
 use RuntimeException;
-use Web3\Methods\IMethod;
-use Web3\Methods\JSONRPC;
 
 class EthMethod extends JSONRPC implements IMethod
 {

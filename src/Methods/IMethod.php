@@ -9,7 +9,7 @@
  * @license MIT
  */
 
-namespace Web3\Methods;
+namespace Cnx\Methods;
 
 interface IMethod
 {

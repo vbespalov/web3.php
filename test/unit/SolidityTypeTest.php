@@ -2,16 +2,15 @@
 
 namespace Test\Unit;
 
-use InvalidArgumentException;
+use Cnx\Contracts\SolidityType;
 use Test\TestCase;
-use Web3\Contracts\SolidityType;
 
 class SolidityTypeTest extends TestCase
 {
     /**
      * type
      * 
-     * @var \Web3\Contracts\SolidityType
+     * @var \Cnx\Contracts\SolidityType
      */
     protected $type;
 

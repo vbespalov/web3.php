@@ -2,15 +2,15 @@
 
 namespace Test\Unit;
 
+use Cnx\Validators\AddressValidator;
 use Test\TestCase;
-use Web3\Validators\AddressValidator;
 
 class AddressValidatorTest extends TestCase
 {
     /**
      * validator
      * 
-     * @var \Web3\Validators\AddressValidator
+     * @var \Cnx\Validators\AddressValidator
      */
     protected $validator;
 

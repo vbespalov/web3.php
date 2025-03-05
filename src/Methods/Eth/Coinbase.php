@@ -9,10 +9,9 @@
  * @license MIT
  */
 
-namespace Web3\Methods\Eth;
+namespace Cnx\Methods\Eth;
 
-use InvalidArgumentException;
-use Web3\Methods\EthMethod;
+use Cnx\Methods\EthMethod;
 
 class Coinbase extends EthMethod
 {

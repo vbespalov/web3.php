@@ -9,13 +9,9 @@
  * @license MIT
  */
 
-namespace Web3\Formatters;
+namespace Cnx\Formatters;
 
-use InvalidArgumentException;
-use Web3\Utils;
-use Web3\Formatters\IFormatter;
-use Web3\Formatters\HexFormatter;
-use Web3\Formatters\QuantityFormatter;
+use Cnx\Utils;
 
 class TransactionFormatter implements IFormatter
 {

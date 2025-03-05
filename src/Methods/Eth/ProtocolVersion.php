@@ -9,11 +9,10 @@
  * @license MIT
  */
 
-namespace Web3\Methods\Eth;
+namespace Cnx\Methods\Eth;
 
-use InvalidArgumentException;
-use Web3\Methods\EthMethod;
-use Web3\Formatters\BigNumberFormatter;
+use Cnx\Formatters\BigNumberFormatter;
+use Cnx\Methods\EthMethod;
 
 class ProtocolVersion extends EthMethod
 {

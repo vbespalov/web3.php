@@ -2,17 +2,17 @@
 
 namespace Test\Unit;
 
+use Cnx\Contracts\TypedDataEncoder;
+use Cnx\Utils;
 use InvalidArgumentException;
 use Test\TestCase;
-use Web3\Utils;
-use Web3\Contracts\TypedDataEncoder;
 
 class TypedDataEncoderTest extends TestCase
 {
     /**
      * typedDataEncoder
      * 
-     * @var \Web3\Contracts\TypedDataEncoder
+     * @var \Cnx\Contracts\TypedDataEncoder
      */
     protected $typedDataEncoder;
 

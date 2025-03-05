@@ -2,9 +2,8 @@
 
 namespace Test\Unit;
 
+use Cnx\Providers\HttpProvider;
 use Test\TestCase;
-use Web3\Providers\Provider;
-use Web3\Providers\HttpProvider;
 
 class ProviderTest extends TestCase
 {

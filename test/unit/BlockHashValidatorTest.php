@@ -2,15 +2,15 @@
 
 namespace Test\Unit;
 
+use Cnx\Validators\BlockHashValidator;
 use Test\TestCase;
-use Web3\Validators\BlockHashValidator;
 
 class BlockHashValidatorTest extends TestCase
 {
     /**
      * validator
      * 
-     * @var \Web3\Validators\BlockHashValidator
+     * @var \Cnx\Validators\BlockHashValidator
      */
     protected $validator;
 

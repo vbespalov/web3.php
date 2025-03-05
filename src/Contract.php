@@ -11,33 +11,33 @@
 
 namespace Web3;
 
+use Cnx\Contracts\Ethabi;
+use Cnx\Contracts\Types\Address;
+use Cnx\Contracts\Types\Boolean;
+use Cnx\Contracts\Types\Bytes;
+use Cnx\Contracts\Types\DynamicBytes;
+use Cnx\Contracts\Types\Integer;
+use Cnx\Contracts\Types\Str;
+use Cnx\Contracts\Types\Uinteger;
+use Cnx\Eth;
+use Cnx\Formatters\AddressFormatter;
+use Cnx\Providers\HttpProvider;
+use Cnx\Providers\Provider;
+use Cnx\Providers\WsProvider;
+use Cnx\Utils;
+use Cnx\Validators\AddressValidator;
+use Cnx\Validators\HexValidator;
+use Cnx\Validators\QuantityValidator;
+use Cnx\Validators\StringValidator;
+use Cnx\Validators\TagValidator;
 use InvalidArgumentException;
-use Web3\Providers\Provider;
-use Web3\Providers\HttpProvider;
-use Web3\Providers\WsProvider;
-use Web3\Utils;
-use Web3\Eth;
-use Web3\Contracts\Ethabi;
-use Web3\Contracts\Types\Address;
-use Web3\Contracts\Types\Boolean;
-use Web3\Contracts\Types\Bytes;
-use Web3\Contracts\Types\DynamicBytes;
-use Web3\Contracts\Types\Integer;
-use Web3\Contracts\Types\Str;
-use Web3\Contracts\Types\Uinteger;
-use Web3\Validators\AddressValidator;
-use Web3\Validators\HexValidator;
-use Web3\Validators\StringValidator;
-use Web3\Validators\TagValidator;
-use Web3\Validators\QuantityValidator;
-use Web3\Formatters\AddressFormatter;
 
 class Contract
 {
     /**
      * provider
      *
-     * @var \Web3\Providers\Provider
+     * @var \Cnx\Providers\Provider
      */
     protected $provider;
 
@@ -86,14 +86,14 @@ class Contract
     /**
      * eth
      * 
-     * @var \Web3\Eth
+     * @var \Cnx\Eth
      */
     protected $eth;
 
     /**
      * ethabi
      * 
-     * @var \Web3\Contracts\Ethabi
+     * @var \Cnx\Contracts\Ethabi
      */
     protected $ethabi;
 
@@ -107,7 +107,7 @@ class Contract
     /**
      * construct
      *
-     * @param string|\Web3\Providers\Provider $provider
+     * @param string|\Cnx\Providers\Provider $provider
      * @param string|\stdClass|array $abi
      * @param mixed $defaultBlock
      * @return void
@@ -217,7 +217,7 @@ class Contract
     /**
      * getProvider
      * 
-     * @return \Web3\Providers\Provider
+     * @return \Cnx\Providers\Provider
      */
     public function getProvider()
     {
@@ -227,7 +227,7 @@ class Contract
     /**
      * setProvider
      *
-     * @param \Web3\Providers\Provider $provider
+     * @param \Cnx\Providers\Provider $provider
      * @return $this
      */
     public function setProvider($provider)
@@ -336,7 +336,7 @@ class Contract
     /**
      * getEth
      * 
-     * @return \Web3\Eth
+     * @return \Cnx\Eth
      */
     public function getEth()
     {

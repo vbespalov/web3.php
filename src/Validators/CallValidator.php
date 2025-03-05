@@ -9,12 +9,7 @@
  * @license MIT
  */
 
-namespace Web3\Validators;
-
-use Web3\Validators\IValidator;
-use Web3\Validators\QuantityValidator;
-use Web3\Validators\TagValidator;
-use Web3\Validators\HexValidator;
+namespace Cnx\Validators;
 
 class CallValidator
 {

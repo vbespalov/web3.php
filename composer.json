@@ -1,5 +1,5 @@
 {
-    "name": "web3p/web3.php",
+    "name": "cnx/web3.php",
     "description": "Ethereum web3 interface.",
     "type": "library",
     "license": "MIT",
@@ -28,7 +28,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Web3\\": "src/"
+            "Cnx\\": "src/"
         }
     },
     "autoload-dev": {

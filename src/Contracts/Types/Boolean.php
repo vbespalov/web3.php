@@ -9,11 +9,10 @@
  * @license MIT
  */
 
-namespace Web3\Contracts\Types;
+namespace Cnx\Contracts\Types;
 
+use Cnx\Contracts\SolidityType;
 use InvalidArgumentException;
-use Web3\Contracts\SolidityType;
-use Web3\Contracts\Types\IType;
 
 class Boolean extends SolidityType implements IType
 {

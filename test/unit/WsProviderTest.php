@@ -2,10 +2,10 @@
 
 namespace Test\Unit;
 
+use Cnx\Methods\Web3\ClientVersion;
+use Cnx\Providers\WsProvider;
 use RuntimeException;
 use Test\TestCase;
-use Web3\Providers\WsProvider;
-use Web3\Methods\Web3\ClientVersion;
 
 class WsProviderTest extends TestCase
 {

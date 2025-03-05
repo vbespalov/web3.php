@@ -2,15 +2,15 @@
 
 namespace Test\Unit;
 
+use Cnx\Validators\TagValidator;
 use Test\TestCase;
-use Web3\Validators\TagValidator;
 
 class TagValidatorTest extends TestCase
 {
     /**
      * validator
      * 
-     * @var \Web3\Validators\TagValidator
+     * @var \Cnx\Validators\TagValidator
      */
     protected $validator;
 

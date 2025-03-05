@@ -2,24 +2,23 @@
 
 namespace Test\Unit;
 
-use InvalidArgumentException;
+use Cnx\Contracts\Ethabi;
+use Cnx\Contracts\Types\Address;
+use Cnx\Contracts\Types\Boolean;
+use Cnx\Contracts\Types\Bytes;
+use Cnx\Contracts\Types\DynamicBytes;
+use Cnx\Contracts\Types\Integer;
+use Cnx\Contracts\Types\Str;
+use Cnx\Contracts\Types\Uinteger;
+use Cnx\Utils;
 use Test\TestCase;
-use Web3\Utils;
-use Web3\Contracts\Ethabi;
-use Web3\Contracts\Types\Address;
-use Web3\Contracts\Types\Boolean;
-use Web3\Contracts\Types\Bytes;
-use Web3\Contracts\Types\DynamicBytes;
-use Web3\Contracts\Types\Integer;
-use Web3\Contracts\Types\Str;
-use Web3\Contracts\Types\Uinteger;
 
 class EthabiTest extends TestCase
 {
     /**
      * abi
      * 
-     * @var \Web3\Contracts\Ethabi
+     * @var \Cnx\Contracts\Ethabi
      */
     protected $abi;
 

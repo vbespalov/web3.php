@@ -9,14 +9,13 @@
  * @license MIT
  */
 
-namespace Web3\Methods\Eth;
+namespace Cnx\Methods\Eth;
 
-use InvalidArgumentException;
-use Web3\Methods\EthMethod;
-use Web3\Validators\AddressValidator;
-use Web3\Validators\HexValidator;
-use Web3\Formatters\AddressFormatter;
-use Web3\Formatters\HexFormatter;
+use Cnx\Formatters\AddressFormatter;
+use Cnx\Formatters\HexFormatter;
+use Cnx\Methods\EthMethod;
+use Cnx\Validators\AddressValidator;
+use Cnx\Validators\HexValidator;
 
 class Sign extends EthMethod
 {

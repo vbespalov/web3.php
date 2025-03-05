@@ -10,20 +10,18 @@
  * @license MIT
  */
 
- namespace Web3\Providers;
+ namespace Cnx\Providers;
 
+use Exception;
 use Ratchet\Client\Connector;
+use Ratchet\RFC6455\Messaging\Frame;
+use Ratchet\RFC6455\Messaging\Message;
 use React;
 use React\Async;
 use React\EventLoop\Loop;
 use React\Promise\Deferred;
 use React\Promise\Timer;
 use React\Promise\Timer\TimeoutException;
-
-use Ratchet\RFC6455\Messaging\Frame;
-use Ratchet\RFC6455\Messaging\Message;
-
-use Exception;
 use RuntimeException;
 
 class NoOriginHeaderConnector extends Connector {
@@ -216,7 +214,7 @@ class WsClient {
     }
 
     public function milliseconds() {
-        list($msec, $sec) = explode(' ', microtime());
+        [$msec, $sec] = explode(' ', microtime());
         return (int)($sec . substr($msec, 2, 3));
     }
 

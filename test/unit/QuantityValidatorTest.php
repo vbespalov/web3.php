@@ -2,15 +2,15 @@
 
 namespace Test\Unit;
 
+use Cnx\Validators\QuantityValidator;
 use Test\TestCase;
-use Web3\Validators\QuantityValidator;
 
 class QuantityValidatorTest extends TestCase
 {
     /**
      * validator
      * 
-     * @var \Web3\Validators\QuantityValidator
+     * @var \Cnx\Validators\QuantityValidator
      */
     protected $validator;
 

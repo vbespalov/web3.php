@@ -9,16 +9,15 @@
  * @license MIT
  */
 
-namespace Web3\Methods\Eth;
+namespace Cnx\Methods\Eth;
 
-use InvalidArgumentException;
-use Web3\Methods\EthMethod;
-use Web3\Validators\TagValidator;
-use Web3\Validators\QuantityValidator;
-use Web3\Validators\ArrayNumberValidator;
-use Web3\Formatters\QuantityFormatter;
-use Web3\Formatters\OptionalQuantityFormatter;
-use Web3\Formatters\FeeHistoryFormatter;
+use Cnx\Formatters\FeeHistoryFormatter;
+use Cnx\Formatters\OptionalQuantityFormatter;
+use Cnx\Formatters\QuantityFormatter;
+use Cnx\Methods\EthMethod;
+use Cnx\Validators\ArrayNumberValidator;
+use Cnx\Validators\QuantityValidator;
+use Cnx\Validators\TagValidator;
 
 class FeeHistory extends EthMethod
 {

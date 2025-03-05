@@ -9,13 +9,12 @@
  * @license MIT
  */
 
-namespace Web3\Methods\Eth;
+namespace Cnx\Methods\Eth;
 
-use InvalidArgumentException;
-use Web3\Methods\EthMethod;
-use Web3\Validators\QuantityValidator;
-use Web3\Formatters\OptionalQuantityFormatter;
-use Web3\Formatters\BigNumberFormatter;
+use Cnx\Formatters\BigNumberFormatter;
+use Cnx\Formatters\OptionalQuantityFormatter;
+use Cnx\Methods\EthMethod;
+use Cnx\Validators\QuantityValidator;
 
 class GetBlockTransactionCountByNumber extends EthMethod
 {

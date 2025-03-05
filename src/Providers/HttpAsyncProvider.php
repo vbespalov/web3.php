@@ -9,20 +9,18 @@
  * @license MIT
  */
 
-namespace Web3\Providers;
+namespace Cnx\Providers;
 
-use InvalidArgumentException;
-use Psr\Http\Message\StreamInterface;
-use RuntimeException as RPCException;
-use Psr\Http\Message\ResponseInterface;
 use GuzzleHttp\Exception\RequestException;
+use InvalidArgumentException;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\StreamInterface;
 use React;
 use React\Async;
 use React\EventLoop\Loop;
 use React\Http\Browser;
 use React\Socket\Connector;
-use Web3\Providers\Provider;
-use Web3\Providers\IProvider;
+use RuntimeException as RPCException;
 
 class HttpAsyncProvider extends Provider implements IProvider
 {
@@ -66,7 +64,7 @@ class HttpAsyncProvider extends Provider implements IProvider
     /**
      * send
      * 
-     * @param \Web3\Methods\Method $method
+     * @param \Cnx\Methods\Method $method
      * @param callable $callback
      * @return void
      */

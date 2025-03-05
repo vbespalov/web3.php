@@ -9,13 +9,11 @@
  * @license MIT
  */
 
-namespace Web3\Contracts\Types;
+namespace Cnx\Contracts\Types;
 
-use InvalidArgumentException;
-use Web3\Contracts\SolidityType;
-use Web3\Contracts\Types\IType;
-use Web3\Utils;
-use Web3\Formatters\IntegerFormatter;
+use Cnx\Contracts\SolidityType;
+use Cnx\Formatters\IntegerFormatter;
+use Cnx\Utils;
 
 class Address extends SolidityType implements IType
 {

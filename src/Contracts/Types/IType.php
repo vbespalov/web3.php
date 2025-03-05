@@ -9,7 +9,7 @@
  * @license MIT
  */
 
-namespace Web3\Contracts\Types;
+namespace Cnx\Contracts\Types;
 
 interface IType
 {

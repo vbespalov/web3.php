@@ -2,15 +2,15 @@
 
 namespace Test\Unit;
 
+use Cnx\Validators\CallValidator;
 use Test\TestCase;
-use Web3\Validators\CallValidator;
 
 class CallValidatorTest extends TestCase
 {
     /**
      * validator
      * 
-     * @var \Web3\Validators\CallValidator
+     * @var \Cnx\Validators\CallValidator
      */
     protected $validator;
 

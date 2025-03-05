@@ -2,15 +2,15 @@
 
 namespace Test\Unit;
 
+use Cnx\Formatters\PostFormatter;
 use Test\TestCase;
-use Web3\Formatters\PostFormatter;
 
 class PostFormatterTest extends TestCase
 {
     /**
      * formatter
      * 
-     * @var \Web3\Formatters\PostFormatter
+     * @var \Cnx\Formatters\PostFormatter
      */
     protected $formatter;
 

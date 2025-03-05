@@ -9,11 +9,10 @@
  * @license MIT
  */
 
-namespace Web3\Methods\Eth;
+namespace Cnx\Methods\Eth;
 
-use InvalidArgumentException;
-use Web3\Methods\EthMethod;
-use Web3\Validators\FilterValidator;
+use Cnx\Methods\EthMethod;
+use Cnx\Validators\FilterValidator;
 
 class NewFilter extends EthMethod
 {

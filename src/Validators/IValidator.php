@@ -9,7 +9,7 @@
  * @license MIT
  */
 
-namespace Web3\Validators;
+namespace Cnx\Validators;
 
 interface IValidator
 {

@@ -9,12 +9,11 @@
  * @license MIT
  */
 
-namespace Web3\Contracts\Types;
+namespace Cnx\Contracts\Types;
 
+use Cnx\Contracts\SolidityType;
+use Cnx\Utils;
 use InvalidArgumentException;
-use Web3\Utils;
-use Web3\Contracts\SolidityType;
-use Web3\Contracts\Types\IType;
 
 class DynamicBytes extends SolidityType implements IType
 {

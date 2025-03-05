@@ -2,16 +2,16 @@
 
 namespace Test\Unit;
 
-use Test\TestCase;
+use Cnx\Formatters\BigNumberFormatter;
 use phpseclib\Math\BigInteger as BigNumber;
-use Web3\Formatters\BigNumberFormatter;
+use Test\TestCase;
 
 class BigNumberFormatterTest extends TestCase
 {
     /**
      * formatter
      * 
-     * @var \Web3\Formatters\BigNumberFormatter
+     * @var \Cnx\Formatters\BigNumberFormatter
      */
     protected $formatter;
 

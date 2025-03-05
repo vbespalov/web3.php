@@ -2,9 +2,8 @@
 
 namespace Test\Unit;
 
-use InvalidArgumentException;
+use Cnx\Contracts\Types\Uinteger;
 use Test\TestCase;
-use Web3\Contracts\Types\Uinteger;
 
 class UintegerTypeTest extends TestCase
 {
@@ -44,7 +43,7 @@ class UintegerTypeTest extends TestCase
     /**
      * solidityType
      * 
-     * @var \Web3\Contracts\SolidityType
+     * @var \Cnx\Contracts\SolidityType
      */
     protected $solidityType;
 

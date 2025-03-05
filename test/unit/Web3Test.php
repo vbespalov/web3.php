@@ -2,15 +2,15 @@
 
 namespace Test\Unit;
 
+use Cnx\Eth;
+use Cnx\Net;
+use Cnx\Personal;
+use Cnx\Providers\HttpProvider;
+use Cnx\Shh;
+use Cnx\Utils;
+use Cnx\Web3;
 use RuntimeException;
 use Test\TestCase;
-use Web3\Web3;
-use Web3\Eth;
-use Web3\Net;
-use Web3\Personal;
-use Web3\Shh;
-use Web3\Utils;
-use Web3\Providers\HttpProvider;
 
 class Web3Test extends TestCase
 {

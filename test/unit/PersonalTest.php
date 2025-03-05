@@ -2,10 +2,10 @@
 
 namespace Test\Unit;
 
+use Cnx\Personal;
+use Cnx\Providers\HttpProvider;
 use RuntimeException;
 use Test\TestCase;
-use Web3\Providers\HttpProvider;
-use Web3\Personal;
 
 class PersonalTest extends TestCase
 {

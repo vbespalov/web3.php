@@ -2,15 +2,15 @@
 
 namespace Test\Unit;
 
+use Cnx\Validators\NonceValidator;
 use Test\TestCase;
-use Web3\Validators\NonceValidator;
 
 class NonceValidatorTest extends TestCase
 {
     /**
      * validator
      * 
-     * @var \Web3\Validators\NonceValidator
+     * @var \Cnx\Validators\NonceValidator
      */
     protected $validator;
 

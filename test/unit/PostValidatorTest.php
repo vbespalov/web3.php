@@ -2,15 +2,15 @@
 
 namespace Test\Unit;
 
+use Cnx\Validators\PostValidator;
 use Test\TestCase;
-use Web3\Validators\PostValidator;
 
 class PostValidatorTest extends TestCase
 {
     /**
      * validator
      * 
-     * @var \Web3\Validators\PostValidator
+     * @var \Cnx\Validators\PostValidator
      */
     protected $validator;
 

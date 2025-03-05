@@ -2,9 +2,8 @@
 
 namespace Test\Unit;
 
-use InvalidArgumentException;
+use Cnx\Contracts\Types\Address;
 use Test\TestCase;
-use Web3\Contracts\Types\Address;
 
 class AddressTypeTest extends TestCase
 {
@@ -38,7 +37,7 @@ class AddressTypeTest extends TestCase
     /**
      * solidityType
      * 
-     * @var \Web3\Contracts\SolidityType
+     * @var \Cnx\Contracts\SolidityType
      */
     protected $solidityType;
 

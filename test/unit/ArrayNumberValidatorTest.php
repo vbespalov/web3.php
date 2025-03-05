@@ -2,15 +2,15 @@
 
 namespace Test\Unit;
 
+use Cnx\Validators\ArrayNumberValidator;
 use Test\TestCase;
-use Web3\Validators\ArrayNumberValidator;
 
 class ArrayNumberValidatorTest extends TestCase
 {
     /**
      * validator
      * 
-     * @var \Web3\Validators\ArrayNumberValidator
+     * @var \Cnx\Validators\ArrayNumberValidator
      */
     protected $validator;
 

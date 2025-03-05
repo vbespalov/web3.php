@@ -9,7 +9,7 @@
  * @license MIT
  */
 
-namespace Web3\Formatters;
+namespace Cnx\Formatters;
 
 interface IFormatter
 {

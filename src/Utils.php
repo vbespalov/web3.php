@@ -9,13 +9,12 @@
  * @license MIT
  */
 
-namespace Web3;
+namespace Cnx;
 
-use RuntimeException;
 use InvalidArgumentException;
-use stdClass;
 use kornrunner\Keccak;
 use phpseclib\Math\BigInteger as BigNumber;
+use stdClass;
 
 class Utils
 {
@@ -316,7 +315,7 @@ class Utils
 
         if (is_array($bn)) {
             // fraction number
-            list($whole, $fraction, $fractionLength, $negative1) = $bn;
+            [$whole, $fraction, $fractionLength, $negative1] = $bn;
 
             if ($fractionLength > strlen(self::UNITS[$unit])) {
                 throw new InvalidArgumentException('toWei fraction part is out of limit.');

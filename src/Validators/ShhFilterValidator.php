@@ -9,12 +9,7 @@
  * @license MIT
  */
 
-namespace Web3\Validators;
-
-use Web3\Validators\IValidator;
-use Web3\Validators\QuantityValidator;
-use Web3\Validators\HexValidator;
-use Web3\Validators\IdentityValidator;
+namespace Cnx\Validators;
 
 class ShhFilterValidator
 {

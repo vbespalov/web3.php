@@ -9,14 +9,13 @@
  * @license MIT
  */
 
-namespace Web3\Methods\Personal;
+namespace Cnx\Methods\Personal;
 
-use InvalidArgumentException;
-use Web3\Methods\EthMethod;
-use Web3\Validators\TransactionValidator;
-use Web3\Validators\StringValidator;
-use Web3\Formatters\TransactionFormatter;
-use Web3\Formatters\StringFormatter;
+use Cnx\Formatters\StringFormatter;
+use Cnx\Formatters\TransactionFormatter;
+use Cnx\Methods\EthMethod;
+use Cnx\Validators\StringValidator;
+use Cnx\Validators\TransactionValidator;
 
 class SendTransaction extends EthMethod
 {

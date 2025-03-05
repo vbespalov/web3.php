@@ -9,9 +9,7 @@
  * @license MIT
  */
 
-namespace Web3\Validators;
-
-use Web3\Validators\IValidator;
+namespace Cnx\Validators;
 
 class HexValidator
 {

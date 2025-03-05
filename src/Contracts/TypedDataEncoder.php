@@ -9,19 +9,17 @@
  * @license MIT
  */
 
-namespace Web3\Contracts;
+namespace Cnx\Contracts;
 
+use Cnx\Utils;
 use InvalidArgumentException;
-use Web3\Utils;
-use Web3\Formatters\IntegerFormatter;
-use Web3\Contracts\Ethabi;
 
 class TypedDataEncoder
 {
     /**
      * ethabi
      * 
-     * @var \Web3\Contracts\Ethabi
+     * @var \Cnx\Contracts\Ethabi
      */
     protected $ethabi;
 
@@ -83,7 +81,7 @@ class TypedDataEncoder
     /**
      * getEthabi
      * 
-     * @return \Web3\Contracts\Ethabi
+     * @return \Cnx\Contracts\Ethabi
      */
     public function getEthabi()
     {
@@ -125,7 +123,7 @@ class TypedDataEncoder
             $dataTypes = [];
             $dataValues = [];
             foreach ($value as $item) {
-                list($dataType, $dataValue) = $this->encodeField($types, $name, $parsedType, $item);
+                [$dataType, $dataValue] = $this->encodeField($types, $name, $parsedType, $item);
                 $dataTypes[] = $dataType;
                 $dataValues[] = $dataValue;
             }
@@ -273,7 +271,7 @@ class TypedDataEncoder
         $encodedValues = [$this->hashType($type, $types)];
 
         foreach ($types[$type] as $field) {
-            list($type, $value) = $this->encodeField($types, $field['name'], $field['type'], $data[$field['name']]);
+            [$type, $value] = $this->encodeField($types, $field['name'], $field['type'], $data[$field['name']]);
             $encodedTypes[] = $type;
             $encodedValues[] = $value;
         }

@@ -2,16 +2,15 @@
 
 namespace Test\Unit;
 
-use RuntimeException;
-use Test\TestCase;
 use phpseclib\Math\BigInteger as BigNumber;
+use Test\TestCase;
 
 class EthBatchTest extends TestCase
 {
     /**
      * eth
      * 
-     * @var \Web3\Eth
+     * @var \Cnx\Eth
      */
     protected $eth;
 

@@ -9,10 +9,9 @@
  * @license MIT
  */
 
-namespace Web3\Methods\Net;
+namespace Cnx\Methods\Net;
 
-use InvalidArgumentException;
-use Web3\Methods\EthMethod;
+use Cnx\Methods\EthMethod;
 
 class Version extends EthMethod
 {

@@ -2,15 +2,15 @@
 
 namespace Test\Unit;
 
+use Cnx\Formatters\HexFormatter;
 use Test\TestCase;
-use Web3\Formatters\HexFormatter;
 
 class HexFormatterTest extends TestCase
 {
     /**
      * formatter
      * 
-     * @var \Web3\Formatters\HexFormatter
+     * @var \Cnx\Formatters\HexFormatter
      */
     protected $formatter;
 

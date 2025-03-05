@@ -2,27 +2,26 @@
 
 namespace Test\Unit;
 
-use Test\TestCase;
-use Web3\Providers\HttpProvider;
-use Web3\Contract;
-use Web3\Utils;
-use Web3\Contracts\Ethabi;
-use Web3\Formatters\IntegerFormatter;
+use Cnx\Contract;
+use Cnx\Formatters\IntegerFormatter;
+use Cnx\Providers\HttpProvider;
+use Cnx\Utils;
 use phpseclib\Math\BigInteger as BigNumber;
+use Test\TestCase;
 
 class ContractTest extends TestCase
 {
     /**
      * contract
      *
-     * @var \Web3\Contract
+     * @var \Cnx\Contract
      */
     protected $contract;
 
     /**
      * async contract
      *
-     * @var \Web3\Contract
+     * @var \Cnx\Contract
      */
     protected $asyncContract;
 

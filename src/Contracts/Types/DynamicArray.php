@@ -9,12 +9,11 @@
  * @license MIT
  */
 
-namespace Web3\Contracts\Types;
+namespace Cnx\Contracts\Types;
 
+use Cnx\Formatters\IntegerFormatter;
+use Cnx\Utils;
 use InvalidArgumentException;
-use Web3\Utils;
-use Web3\Contracts\Types\BaseArray;
-use Web3\Formatters\IntegerFormatter;
 
 class DynamicArray extends BaseArray
 {

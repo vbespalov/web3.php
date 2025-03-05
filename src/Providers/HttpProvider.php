@@ -9,16 +9,14 @@
  * @license MIT
  */
 
-namespace Web3\Providers;
+namespace Cnx\Providers;
 
+use GuzzleHttp\Client;
+use GuzzleHttp\Exception\RequestException;
 use InvalidArgumentException;
+use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\StreamInterface;
 use RuntimeException as RPCException;
-use Psr\Http\Message\ResponseInterface;
-use GuzzleHttp\Exception\RequestException;
-use GuzzleHttp\Client;
-use Web3\Providers\Provider;
-use Web3\Providers\IProvider;
 
 class HttpProvider extends Provider implements IProvider
 {
@@ -59,7 +57,7 @@ class HttpProvider extends Provider implements IProvider
     /**
      * send
      * 
-     * @param \Web3\Methods\Method $method
+     * @param \Cnx\Methods\Method $method
      * @param callable $callback
      * @return void
      */

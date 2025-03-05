@@ -2,15 +2,15 @@
 
 namespace Test\Unit;
 
+use Cnx\Formatters\StringFormatter;
 use Test\TestCase;
-use Web3\Formatters\StringFormatter;
 
 class StringFormatterTest extends TestCase
 {
     /**
      * formatter
      * 
-     * @var \Web3\Formatters\StringFormatter
+     * @var \Cnx\Formatters\StringFormatter
      */
     protected $formatter;
 

@@ -2,17 +2,17 @@
 
 namespace Test\Unit;
 
-use RuntimeException;
 use InvalidArgumentException;
-use Test\TestCase;
 use phpseclib\Math\BigInteger as BigNumber;
+use RuntimeException;
+use Test\TestCase;
 
 class EthApiTest extends TestCase
 {
     /**
      * eth
      * 
-     * @var \Web3\Eth
+     * @var \Cnx\Eth
      */
     protected $eth;
 

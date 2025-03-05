@@ -9,11 +9,11 @@
  * @license MIT
  */
 
-namespace Web3\Methods\Personal;
+namespace Cnx\Methods\Personal;
 
-use Web3\Methods\EthMethod;
-use Web3\Validators\AddressValidator;
-use Web3\Formatters\AddressFormatter;
+use Cnx\Formatters\AddressFormatter;
+use Cnx\Methods\EthMethod;
+use Cnx\Validators\AddressValidator;
 
 class LockAccount extends EthMethod
 {

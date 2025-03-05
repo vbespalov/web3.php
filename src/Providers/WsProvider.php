@@ -9,11 +9,9 @@
  * @license MIT
  */
 
-namespace Web3\Providers;
+namespace Cnx\Providers;
 
 use React\Async;
-use Web3\Providers\Provider;
-use Web3\Providers\IProvider;
 
 class WsProvider extends Provider implements IProvider
 {
@@ -27,7 +25,7 @@ class WsProvider extends Provider implements IProvider
     /**
      * client
      *
-     * @var \Web3\Providers\WsClient
+     * @var \Cnx\Providers\WsClient
      */
     protected $client;
 
@@ -61,7 +59,7 @@ class WsProvider extends Provider implements IProvider
     /**
      * send
      * 
-     * @param \Web3\Methods\Method $method
+     * @param \Cnx\Methods\Method $method
      * @param callable $callback
      * @return void
      */

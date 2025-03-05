@@ -2,15 +2,15 @@
 
 namespace Test\Unit;
 
+use Cnx\Validators\HexValidator;
 use Test\TestCase;
-use Web3\Validators\HexValidator;
 
 class HexValidatorTest extends TestCase
 {
     /**
      * validator
      * 
-     * @var \Web3\Validators\HexValidator
+     * @var \Cnx\Validators\HexValidator
      */
     protected $validator;
 

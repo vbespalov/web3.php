@@ -2,15 +2,15 @@
 
 namespace Test\Unit;
 
+use Cnx\Validators\FilterValidator;
 use Test\TestCase;
-use Web3\Validators\FilterValidator;
 
 class FilterValidatorTest extends TestCase
 {
     /**
      * validator
      * 
-     * @var \Web3\Validators\FilterValidator
+     * @var \Cnx\Validators\FilterValidator
      */
     protected $validator;
 

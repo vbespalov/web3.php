@@ -9,58 +9,53 @@
  * @license MIT
  */
 
-namespace Web3;
+namespace Cnx;
 
-use Web3\Eth;
-use Web3\Net;
-use Web3\Personal;
-use Web3\Shh;
-use Web3\Utils;
-use Web3\Providers\Provider;
-use Web3\Providers\HttpProvider;
-use Web3\Providers\WsProvider;
+use Cnx\Providers\HttpProvider;
+use Cnx\Providers\Provider;
+use Cnx\Providers\WsProvider;
 
 class Web3
 {
     /**
      * provider
      *
-     * @var \Web3\Providers\Provider
+     * @var \Cnx\Providers\Provider
      */
     protected $provider;
 
     /**
      * eth
      * 
-     * @var \Web3\Eth
+     * @var \Cnx\Eth
      */
     protected $eth;
 
     /**
      * net
      * 
-     * @var \Web3\Net
+     * @var \Cnx\Net
      */
     protected $net;
 
     /**
      * personal
      * 
-     * @var \Web3\Personal
+     * @var \Cnx\Personal
      */
     protected $personal;
 
     /**
      * shh
      * 
-     * @var \Web3\Shh
+     * @var \Cnx\Shh
      */
     protected $shh;
 
     /**
      * utils
      * 
-     * @var \Web3\Utils
+     * @var \Cnx\Utils
      */
     protected $utils;
 
@@ -83,7 +78,7 @@ class Web3
     /**
      * construct
      *
-     * @param string|\Web3\Providers\Provider $provider
+     * @param string|\Cnx\Providers\Provider $provider
      * @param float $timeout
      * @return void
      */
@@ -183,7 +178,7 @@ class Web3
     /**
      * getProvider
      * 
-     * @return \Web3\Providers\Provider
+     * @return \Cnx\Providers\Provider
      */
     public function getProvider()
     {
@@ -193,7 +188,7 @@ class Web3
     /**
      * setProvider
      * 
-     * @param \Web3\Providers\Provider $provider
+     * @param \Cnx\Providers\Provider $provider
      * @return bool
      */
     public function setProvider($provider)
@@ -208,7 +203,7 @@ class Web3
     /**
      * getEth
      * 
-     * @return \Web3\Eth
+     * @return \Cnx\Eth
      */
     public function getEth()
     {
@@ -222,7 +217,7 @@ class Web3
     /**
      * getNet
      * 
-     * @return \Web3\Net
+     * @return \Cnx\Net
      */
     public function getNet()
     {
@@ -236,7 +231,7 @@ class Web3
     /**
      * getPersonal
      * 
-     * @return \Web3\Personal
+     * @return \Cnx\Personal
      */
     public function getPersonal()
     {
@@ -250,7 +245,7 @@ class Web3
     /**
      * getShh
      * 
-     * @return \Web3\Shh
+     * @return \Cnx\Shh
      */
     public function getShh()
     {
@@ -264,7 +259,7 @@ class Web3
     /**
      * getUtils
      * 
-     * @return \Web3\Utils
+     * @return \Cnx\Utils
      */
     public function getUtils()
     {

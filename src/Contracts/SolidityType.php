@@ -9,10 +9,9 @@
  * @license MIT
  */
 
-namespace Web3\Contracts;
+namespace Cnx\Contracts;
 
-use Web3\Utils;
-use Web3\Formatters\IntegerFormatter;
+use Cnx\Utils;
 
 class SolidityType
 {

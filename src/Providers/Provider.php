@@ -9,7 +9,7 @@
  * @license MIT
  */
 
-namespace Web3\Providers;
+namespace Cnx\Providers;
 
 class Provider
 {

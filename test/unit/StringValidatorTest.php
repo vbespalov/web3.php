@@ -2,15 +2,15 @@
 
 namespace Test\Unit;
 
+use Cnx\Validators\StringValidator;
 use Test\TestCase;
-use Web3\Validators\StringValidator;
 
 class StringValidatorTest extends TestCase
 {
     /**
      * validator
      * 
-     * @var \Web3\Validators\StringValidator
+     * @var \Cnx\Validators\StringValidator
      */
     protected $validator;
 

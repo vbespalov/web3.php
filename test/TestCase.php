@@ -2,17 +2,16 @@
 
 namespace Test;
 
-use \PHPUnit\Framework\TestCase as BaseTestCase;
-use Web3\Web3;
-use Web3\Providers\HttpAsyncProvider;
-use Web3\Providers\HttpProvider;
+use Cnx\Providers\HttpAsyncProvider;
+use Cnx\Web3;
+use PHPUnit\Framework\TestCase as BaseTestCase;
 
 class TestCase extends BaseTestCase
 {
     /**
      * web3
      * 
-     * @var \Web3\Web3
+     * @var \Cnx\Web3
      */
     protected $web3;
 
@@ -47,7 +46,7 @@ class TestCase extends BaseTestCase
     /**
      * asyncHttpProvider
      * 
-     * @var \Web3\Providers\HttpAsyncProvider
+     * @var \Cnx\Providers\HttpAsyncProvider
      */
     protected $asyncHttpProvider;
 

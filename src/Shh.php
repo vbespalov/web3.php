@@ -11,16 +11,16 @@
 
 namespace Web3;
 
-use Web3\Providers\Provider;
-use Web3\Providers\HttpProvider;
-use Web3\Providers\WsProvider;
+use Cnx\Providers\HttpProvider;
+use Cnx\Providers\Provider;
+use Cnx\Providers\WsProvider;
 
 class Shh
 {
     /**
      * provider
      *
-     * @var \Web3\Providers\Provider
+     * @var \Cnx\Providers\Provider
      */
     protected $provider;
 
@@ -44,7 +44,7 @@ class Shh
     /**
      * construct
      *
-     * @param string|\Web3\Providers\Provider $provider
+     * @param string|\Cnx\Providers\Provider $provider
      * @param float $timeout
      * @return void
      */
@@ -144,7 +144,7 @@ class Shh
     /**
      * getProvider
      * 
-     * @return \Web3\Providers\Provider
+     * @return \Cnx\Providers\Provider
      */
     public function getProvider()
     {
@@ -154,7 +154,7 @@ class Shh
     /**
      * setProvider
      * 
-     * @param \Web3\Providers\Provider $provider
+     * @param \Cnx\Providers\Provider $provider
      * @return bool
      */
     public function setProvider($provider)

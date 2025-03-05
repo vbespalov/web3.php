@@ -2,11 +2,11 @@
 
 namespace Test\Unit;
 
+use Cnx\Methods\Web3\ClientVersion;
+use Cnx\Providers\HttpAsyncProvider;
+use Cnx\Providers\HttpProvider;
 use RuntimeException;
 use Test\TestCase;
-use Web3\Providers\HttpAsyncProvider;
-use Web3\Providers\HttpProvider;
-use Web3\Methods\Web3\ClientVersion;
 
 class HttpProviderTest extends TestCase
 {

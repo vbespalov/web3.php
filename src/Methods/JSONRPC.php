@@ -9,10 +9,9 @@
  * @license MIT
  */
 
-namespace Web3\Methods;
+namespace Cnx\Methods;
 
 use InvalidArgumentException;
-use Web3\Methods\IRPC;
 
 class JSONRPC implements IRPC
 {

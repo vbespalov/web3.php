@@ -2,15 +2,15 @@
 
 namespace Test\Unit;
 
+use Cnx\Formatters\TransactionFormatter;
 use Test\TestCase;
-use Web3\Formatters\TransactionFormatter;
 
 class TransactionFormatterTest extends TestCase
 {
     /**
      * formatter
      * 
-     * @var \Web3\Formatters\TransactionFormatter
+     * @var \Cnx\Formatters\TransactionFormatter
      */
     protected $formatter;
 

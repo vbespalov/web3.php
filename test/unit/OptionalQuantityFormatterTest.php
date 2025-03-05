@@ -2,15 +2,15 @@
 
 namespace Test\Unit;
 
+use Cnx\Formatters\OptionalQuantityFormatter;
 use Test\TestCase;
-use Web3\Formatters\OptionalQuantityFormatter;
 
 class OptionalQuantityFormatterTest extends TestCase
 {
     /**
      * formatter
      * 
-     * @var \Web3\Formatters\OptionalQuantityFormatter
+     * @var \Cnx\Formatters\OptionalQuantityFormatter
      */
     protected $formatter;
 

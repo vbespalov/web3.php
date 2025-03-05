@@ -9,12 +9,9 @@
  * @license MIT
  */
 
-namespace Web3\Formatters;
+namespace Cnx\Formatters;
 
-use InvalidArgumentException;
-use Web3\Utils;
-use Web3\Formatters\IFormatter;
-use Web3\Formatters\BigNumberFormatter;
+use Cnx\Utils;
 
 class FeeHistoryFormatter implements IFormatter
 {

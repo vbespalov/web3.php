@@ -9,13 +9,12 @@
  * @license MIT
  */
 
-namespace Web3\Contracts\Types;
+namespace Cnx\Contracts\Types;
 
-use Web3\Utils;
-use Web3\Contracts\SolidityType;
-use Web3\Contracts\Types\IType;
-use Web3\Formatters\IntegerFormatter;
-use Web3\Formatters\BigNumberFormatter;
+use Cnx\Contracts\SolidityType;
+use Cnx\Formatters\BigNumberFormatter;
+use Cnx\Formatters\IntegerFormatter;
+use Cnx\Utils;
 
 class Integer extends SolidityType implements IType
 {

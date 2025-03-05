@@ -9,14 +9,13 @@
  * @license MIT
  */
 
-namespace Web3\Methods\Eth;
+namespace Cnx\Methods\Eth;
 
-use InvalidArgumentException;
-use Web3\Methods\EthMethod;
-use Web3\Validators\BlockHashValidator;
-use Web3\Validators\BooleanValidator;
-use Web3\Formatters\HexFormatter;
-use Web3\Formatters\BooleanFormatter;
+use Cnx\Formatters\BooleanFormatter;
+use Cnx\Formatters\HexFormatter;
+use Cnx\Methods\EthMethod;
+use Cnx\Validators\BlockHashValidator;
+use Cnx\Validators\BooleanValidator;
 
 class GetBlockByHash extends EthMethod
 {

@@ -9,11 +9,10 @@
  * @license MIT
  */
 
-namespace Web3\Methods\Shh;
+namespace Cnx\Methods\Shh;
 
-use InvalidArgumentException;
-use Web3\Methods\EthMethod;
-use Web3\Validators\IdentityValidator;
+use Cnx\Methods\EthMethod;
+use Cnx\Validators\IdentityValidator;
 
 class AddToGroup extends EthMethod
 {

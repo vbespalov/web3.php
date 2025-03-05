@@ -9,7 +9,7 @@
  * @license MIT
  */
 
-namespace Web3\Providers;
+namespace Cnx\Providers;
 
 interface IProvider
 {
@@ -23,7 +23,7 @@ interface IProvider
     /**
      * send
      * 
-     * @param \Web3\Methods\Method $method
+     * @param \Cnx\Methods\Method $method
      * @param callable $callback
      * @return void
      */

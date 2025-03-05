@@ -9,15 +9,14 @@
  * @license MIT
  */
 
-namespace Web3\Methods\Eth;
+namespace Cnx\Methods\Eth;
 
-use InvalidArgumentException;
-use Web3\Methods\EthMethod;
-use Web3\Validators\TagValidator;
-use Web3\Validators\QuantityValidator;
-use Web3\Validators\AddressValidator;
-use Web3\Formatters\AddressFormatter;
-use Web3\Formatters\OptionalQuantityFormatter;
+use Cnx\Formatters\AddressFormatter;
+use Cnx\Formatters\OptionalQuantityFormatter;
+use Cnx\Methods\EthMethod;
+use Cnx\Validators\AddressValidator;
+use Cnx\Validators\QuantityValidator;
+use Cnx\Validators\TagValidator;
 
 class GetCode extends EthMethod
 {

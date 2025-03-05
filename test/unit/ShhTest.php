@@ -2,10 +2,10 @@
 
 namespace Test\Unit;
 
+use Cnx\Providers\HttpProvider;
+use Cnx\Shh;
 use RuntimeException;
 use Test\TestCase;
-use Web3\Providers\HttpProvider;
-use Web3\Shh;
 
 class ShhTest extends TestCase
 {

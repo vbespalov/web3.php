@@ -2,10 +2,10 @@
 
 namespace Test\Unit;
 
+use Cnx\Net;
+use Cnx\Providers\HttpProvider;
 use RuntimeException;
 use Test\TestCase;
-use Web3\Providers\HttpProvider;
-use Web3\Net;
 
 class NetTest extends TestCase
 {
