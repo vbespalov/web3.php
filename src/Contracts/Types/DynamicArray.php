@@ -2,9 +2,9 @@
 
 /**
  * This file is part of web3.php package.
- * 
+ *
  * (c) Kuan-Cheng,Lai <alk03073135@gmail.com>
- * 
+ *
  * @author Peter Lai <alk03073135@gmail.com>
  * @license MIT
  */
@@ -19,7 +19,7 @@ class DynamicArray extends BaseArray
 {
     /**
      * construct
-     * 
+     *
      * @return void
      */
     public function __construct()
@@ -29,7 +29,7 @@ class DynamicArray extends BaseArray
 
     /**
      * isType
-     * 
+     *
      * @param string $name
      * @return bool
      */
@@ -40,7 +40,7 @@ class DynamicArray extends BaseArray
 
     /**
      * isDynamicType
-     * 
+     *
      * @return bool
      */
     public function isDynamicType()
@@ -50,7 +50,7 @@ class DynamicArray extends BaseArray
 
     /**
      * inputFormat
-     * 
+     *
      * @param mixed $value
      * @param array $abiType
      * @return string
@@ -64,7 +64,7 @@ class DynamicArray extends BaseArray
 
     /**
      * outputFormat
-     * 
+     *
      * @param string $value
      * @param array $abiType
      * @return array
@@ -85,9 +85,16 @@ class DynamicArray extends BaseArray
             if ($decoder['dynamic']) {
                 $decodeValueOffsetHex = mb_substr($value, $offset, 64);
                 $decodeValueOffset = (int) Utils::hexToNumber($decodeValueOffsetHex) * 2;
+                $offset += 64;
+            } else {
+                // For static types (like tuple with static components)
+                $decoded = $decoder['solidityType']->decode($value, $decodeValueOffset, $decoder);
+                $elementSize = $this->deepCalculateDataLength($decoded) * 64;
+                $results[] = $decoded;
+                $offset += $elementSize;
+                continue;
             }
             $results[] = $decoder['solidityType']->decode($value, $decodeValueOffset, $decoder);
-            $offset += 64;
         }
         return $results;
     }
