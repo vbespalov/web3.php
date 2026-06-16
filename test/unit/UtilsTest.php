@@ -555,6 +555,10 @@ class UtilsTest extends TestCase
 
         $this->assertTrue($isHex);
 
+        // Hex is case-insensitive: uppercase / mixed-case (checksum addresses, RLP payloads) must pass.
+        $this->assertTrue(Utils::isHex('0xABCDEF'));
+        $this->assertTrue(Utils::isHex('0x02aBcDeF'));
+
         $isHex = Utils::isHex('hello world');
 
         $this->assertFalse($isHex);

@@ -248,7 +248,9 @@ class Utils
      */
     public static function isHex($value)
     {
-        return (is_string($value) && preg_match('/^(0x)?[a-f0-9]*$/', $value) === 1);
+        // Hex is case-insensitive: accept A-F as well as a-f. Otherwise checksum (mixed-case)
+        // addresses and RLP payloads embedding them fail dynamic-bytes ABI encoding.
+        return (is_string($value) && preg_match('/^(0x)?[a-fA-F0-9]*$/', $value) === 1);
     }
 
     /**
